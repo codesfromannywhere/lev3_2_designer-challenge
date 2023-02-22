@@ -1,0 +1,291 @@
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1 {
+    font-family: "Roboto-Bold";
+    font-size: 3.5rem;
+    color: #0b0c17;
+}
+
+h2 {
+    font-family: "Roboto-Bold";
+    font-size: 2.5rem;
+    color: #0b0c17;
+}
+
+h3 {
+    font-family: "Roboto-Bold";
+    font-size: 4.3rem;
+    color: #dddddd;
+    padding-bottom: 5vh;
+}
+
+h4 {
+    font-family: "Roboto-Bold";
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+
+p {
+    font-family: "Roboto-Light";
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #0b0c17;
+}
+
+input {
+    font-family: "Roboto-Light";
+}
+
+/* ================== HEADER ==================*/
+
+header {
+    background-image: url("../images/ilustracion1.png");
+    background-size: 90vh;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+header article {
+    display: flex;
+    margin-left: 3vh;
+}
+
+header article:nth-of-type(1) img {
+    max-height: 5vh;
+    position: fixed;
+    margin-top: 2vh;
+}
+
+header article div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 3vw;
+    margin-top: 3vh;
+}
+
+header article div:nth-of-type(1) p:nth-of-type(1) {
+    font-family: "Roboto-Bold";
+    line-height: 0.6rem;
+}
+
+header article div p:nth-of-type(2) {
+    font-size: 0.8rem;
+}
+
+/* ================== 2. Article ==================*/
+header article:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+}
+
+header article:nth-of-type(2) div:nth-of-type(1) {
+    margin-top: 30vh;
+}
+
+header article:nth-of-type(2) div p:nth-of-type(1) {
+    padding: 5vh 0 15vh 0;
+    font-family: "Roboto-Light";
+}
+
+header article:nth-of-type(2) p img {
+    height: 1.5rem;
+}
+
+header article:nth-of-type(2) a {
+    color: #ff3571;
+    font-family: "Roboto-Bold";
+}
+
+header article:nth-of-type(2) div:nth-of-type(2) img {
+    max-height: 70vh;
+}
+
+
+/* ================== MAIN ==================*/
+/* ================== // Section 1 ==================*/
+
+main section:nth-of-type(1) {
+    text-align: center;
+}
+
+main section:nth-of-type(1) img {
+    height: 65vh;
+    margin: 15vh 0 30vh 0;
+}
+
+/* ================== MAIN // Section 2 ==================*/
+
+main section:nth-of-type(2) {
+    display: flex;
+    justify-content: right;
+    margin: 0 20vw 15vh 20vw;
+    gap: 5vw;
+}
+
+main section:nth-of-type(2) h2 {
+    width: 30vw;
+}
+
+main section:nth-of-type(2) img {
+    max-height: 2.5rem;
+}
+
+main section:nth-of-type(2) p {
+    width: 70vw;
+}
+
+/* ================== MAIN // Section 3 ==================*/
+
+main section:nth-of-type(3) h2 {
+    margin: 0 50vw 0 20vw;
+    padding-bottom: 30vh;
+}
+
+main section:nth-of-type(3) article {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20vw 0 20vw;
+
+}
+
+main section:nth-of-type(3) article div {
+    width: 20vw;
+}
+
+main section:nth-of-type(3) article:nth-of-type(1) {
+    padding-bottom: 10vh;
+}
+
+main section:nth-of-type(3) article:nth-of-type(2) {
+    margin-bottom: 40vh;
+}
+
+
+/* ================== MAIN // Section 4 ==================*/
+
+main section:nth-of-type(4) {
+    text-align: center;
+}
+
+main section:nth-of-type(4) p {
+    margin: 7vh 30vw 25vh 30vw;
+}
+
+/* ================== MAIN // Section 5+6 Class "ODD" ==================*/
+
+main section.odd {
+    display: flex;
+    /* justify-content: space-around; */
+    margin-left: 10vw;
+    margin-bottom: 30vh;
+}
+
+main section.odd div img {
+    width: 40vw;
+}
+
+main section.odd article {
+    width: 40vw;
+    padding-left: 10vw;
+}
+
+main section.odd article img:nth-of-type(2) {
+    height: 3rem;
+}
+
+main section.odd h4 {
+    padding: 3vh 0;
+}
+
+/* ================== MAIN // Section 7+8 Class "EVEN" ==================*/
+
+main section.even {
+    display: flex;
+    margin-left: 10vw;
+    margin-bottom: 30vh;
+}
+
+main section.even div img {
+    width: 40vw;
+    padding-left: 10vw;
+
+}
+
+main section.even article {
+    width: 40vw;
+}
+
+main section.even article img:nth-of-type(2) {
+    height: 3rem;
+}
+
+main section.even h4 {
+    padding: 3vh 0;
+}
+
+/* ================== FOOTER ==================*/
+
+
+footer {
+    text-align: center;
+}
+
+footer p:nth-of-type(1) {
+    margin: 7vh 30vw 8vh 30vw;
+}
+
+footer form input {
+    display: block;
+    margin: 0 auto;
+}
+
+footer form input[type="email"] {
+    font-size: 1.5rem;
+    padding: 4vh 12vw;
+    border: none;
+    box-shadow: 0px 0px 15px 5px #DDDDDD;
+    margin-bottom: 5vh;
+}
+
+footer form input[type="button"] {
+    color: #dddddd;
+    background-color: #ff3571;
+    border: none;
+    border-radius: 5px;
+    padding: 2vh 7vw;
+    font-size: 1.3rem;
+    margin-bottom: 30vh;
+}
+
+footer p:nth-of-type(2) {
+    text-align: left;
+    margin: 0 0 3vh 10vw;
+}
+
+footer p:nth-of-type(2) img {
+    height: 1.5rem;
+}
