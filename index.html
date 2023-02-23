@@ -50,11 +50,13 @@
             <h2>After several weeks of sticking to this challenge, I learned a lot</h2>
 
             <article>
+                <img src="./assets/images/title02.svg" alt="idea">
                 <div>
                     <h4>Start with asking why</h4>
                     <p>You will start seeing things differently and coming up with more effective ways of achieving
                         goals.</p>
                 </div>
+                <img src="./assets/images/title04.svg" alt="share">
                 <div>
                     <h4>Your ideas will have more value </h4>
                     <p>By looking at problems from a different perspective, your ideas will be fresher and more valuable
@@ -62,15 +64,16 @@
                 </div>
             </article>
             <article>
+                <img src="./assets/images/title01.svg" alt="love">
                 <div>
                     <h4>Design solutions with love</h4>
                     <p>Only when you experience a problem yourself do you understand the frustration of the users and
                         resolve to end it.</p>
                 </div>
+                <img src="./assets/images/title03.svg" alt="pen">
                 <div>
                     <h4>Share and show your work </h4>
-                    <p>As designers, we are often afraid of showing work that’s not finished or doesn’t look perfect.
-                        You will learn to accept feedback and learn from it.</p>
+                    <p>As designers, we are often afraid of showing work that’s not finished or doesn’t look perfect. You will learn t‚o accept feedback and learn from it.</p>
                 </div>
             </article>
         </section>
@@ -100,7 +103,7 @@
         <section class="even">
             <article>
                 <h3>02</h3>
-                <img src="./assets/images/step02.svg" alt="">
+                <img src="./assets/images/step02.svg" alt="hand">
                 <h4>Think about the solution
                 </h4>
                 <p>It's time to look for solutions. What can you do to solve these problems? It's time to think out of
@@ -117,7 +120,7 @@
             </div>
             <article>
                 <h3>03</h3>
-                <img src="./assets/images/step03.svg" alt="">
+                <img src="./assets/images/step03.svg" alt="laptop">
                 <h4>Design your proposal
                 </h4>
                 <p>How can design help solve your problem? It's time to think about features and functionality, and then
@@ -136,21 +139,40 @@
                     what people have to say about it.</p>
             </article>
             <div>
-                <img src="./assets/images/step04.png" alt="rocket_lupe">
+                <img src="./assets/images/step04.png" alt="surfboard">
             </div>
         </section>
     </main>
     <footer>
-        <h2>Do you like this challenge?
-        </h2>
-        <p>Subscribe to be the first to hear about updates, tips and recommendations!
-        </p>
-        <form action="">
-            <input type="email" placeholder="Write your email here">
-            <input type="button" value="Subscribe">
+
+        <form action="" onsubmit="return false" id="subscribe_form">
+            <h2>Do you like this challenge?
+            </h2>
+            <p>Subscribe to be the first to hear about updates, tips and recommendations!
+            </p>
+
+            <input type="email" placeholder="Write your email here" id="inputemail">
+            <input type="submit" value="Subscribe" onclick="subscribe ()">
         </form>
-        <p>Created with Love by a WebDesigner <img src="./assets/images/love.png" alt=""></p>
+
+        <article id="confirmation_pg">
+            <h4>🥳</h4>
+            <h4>OUR EMAIL HAS BEEN CONFIRMED.</h4>
+            <h4>THANK'S FOR SUBSCRIBING!</h4>
+            <p> Now we just need to confirm your email adress - please click the link in the email we sent you. Thanks!
+            </p>
+            <button id="confirmation_pg_button" onclick="goBack()">BACK TO DESIGNERCHALLANGE.COM
+            </button>
+        </article>
+
+        <div>
+            <p>Created with Love by a WebDesigner
+                <img src="./assets/images/love.png" alt="">
+            </p>
+        </div>
     </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
